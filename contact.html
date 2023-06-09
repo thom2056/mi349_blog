@@ -18,24 +18,29 @@
     <form>
         
           <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
+            <label>
+                Name:
+                <input type="text">
+            </label>
           </li>
           <li>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
+            <label>
+                Email:
+                <input type="text">
+            </label>
           </li>
           <li>
-            <label for="reason">Reason for contact:</label>
-            <input type="text" name="Reasons" id="Reasons" list="ReasonsforContact" />
-            <datalist id="ReasonsforContact">
-                <option>Saying hi</option>
-                <option>Looking for a contractor</option>
-                <option>Interested  in an interview</option>
-                </datalist>
-          </li>
+            <label for="reasons">Reason for contact:</label>
+            <input type="text" name="reasons" id="reasons" list="reasonsforcontact" />
+                <datalist id="reasonsforcontact">
+                    <option>Saying hi</option>
+                    <option>Looking for a contractor</option>
+                    <option>Interested in an interview</option>
+                </datalist>        
           <li>
-            <label for="msg">Message:</label>
+            <label>
+                Message:
+            </label>
             <textarea id="msg" name="user_message"></textarea>
           </li>
           <button>Submit</button>
