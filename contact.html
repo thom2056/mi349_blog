@@ -11,5 +11,33 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <h2>Contact Form</h2>
+    <form action="Contact Form" method="Form">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="reason">Reason for contact:</label>
+            <input type="text" name="Reasons" id="Reasons" list="ReasonsforContact" />
+            <datalist id="ReasonsforContact">
+                <option>Saying hi</option>
+                <option>Looking for a contractor</option>
+                <option>Interested  in an interview</option>
+                </datalist>
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+        </ul>
+        <button>Submit</button>
+      </form>
