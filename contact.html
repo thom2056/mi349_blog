@@ -16,31 +16,35 @@
     </nav>
     <h2>Contact Form</h2>
     <form>
-        
-          
-            <label>
-                Name:
-                <input type="text">
-            </label>
-          
-            <label>
-                Email Address:
-                <input type="text">
-            </label>
-          
+        <ul>
+            <li>
+                <label>
+                    Name:
+                    <input type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Email Address:
+                    <input type="text">
+                </label>
+            </li>
+            <li>
             <label for="reasons">Reason for contact:</label>
             <input type="text" name="reasons" id="reasons" list="reasonsforcontact" >
                 <datalist id="reasonsforcontact">
                     <option>Saying hi</option>
                     <option>Looking for a contractor</option>
                     <option>Interested in an interview</option>
-                </datalist>        
-          
-            <label>
-                Comment:
-            </label>
-            <textarea id="msg" name="user_comment"></textarea>
-          
+                </datalist> 
+            </li>       
+            <li>
+                <label>
+                    Comment:
+                    <textarea id="msg" name="user_comment"></textarea>
+                </label>
+            </li>
+        </ul>
           <button>Submit</button>
         
       </form>
