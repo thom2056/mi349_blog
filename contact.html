@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Page</title>
 </head>
 <body>
-    <header>
+    <header class="sticky">
         <h1>Summer Fun</h1>
         <p>How to take advantage of the short Michigan summers</p>
         <nav>
@@ -17,39 +18,29 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        </header>
 
 
     <h2>Contact Form</h2>
-    <form>
-        <ul>
-            <li>
-                <label>
-                    Name:
-                    <input type="text">
-                </label>
-            </li>
-            <li>
-                <label>
-                    Email Address:
-                    <input type="text">
-                </label>
-            </li>
-            <li>
+    <div class="contact-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email">
+
             <label for="reasons">Reason for contact:</label>
-            <input type="text" name="reasons" id="reasons" list="reasonsforcontact" >
-                <datalist id="reasonsforcontact">
-                    <option>Saying hi</option>
-                    <option>Looking for a contractor</option>
-                    <option>Interested in an interview</option>
-                </datalist> 
-            </li>       
-            <li>
-                <label>
-                    Comment:
-                    <textarea id="msg" name="user_comment"></textarea>
-                </label>
-            </li>
-        </ul>
-          <button>Submit</button>
-        
-      </form>
+            <select id="reasons" name="reasons" >
+                <option value="Saying hi">Saying hi</option>
+                <option value="Looking for a contractor">Looking for a contractor</option>
+                <option value="Interested in an interview">Interested in an interview</option>
+            </select>
+            
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+      </div>
